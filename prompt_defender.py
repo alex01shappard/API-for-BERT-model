@@ -14,6 +14,10 @@ class PromptDefenderClassifier:
         self.model.eval()  # Переключаем модель в режим оценки
 
     def check_on_bad_request(self, prompt_input):
+        # Проверка инпута
+        if not isinstance(prompt_input, str):
+            return "Input must be a string."       
+
         # Токенизация нового текста
         new_texts_tokenized = self.tokenizer(
             [prompt_input],
