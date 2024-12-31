@@ -1,6 +1,7 @@
 from main import app, classifier
 from unittest.mock import MagicMock
 from fastapi.testclient import TestClient
+import threading
 
 client = TestClient(app)
 
