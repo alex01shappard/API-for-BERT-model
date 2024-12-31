@@ -1,7 +1,7 @@
 # machine learning
 torch>=2.2.0
 transformers>=4.38.0
-pillow>=11.0.0
+pillow>=10.4.0
 numpy>=1.26.4
 pandas>=2.2.3
 # web framework
